@@ -1,0 +1,103 @@
+.details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+
+
+    a {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(39, 100, 124);
+        border-radius: 5px;
+        padding: 8px;
+        cursor: pointer;
+
+    }
+
+    .header {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        .favBtn {
+            cursor: pointer;
+            font-size: 15px;
+            background-color: rgb(39, 100, 124);
+            border-radius: 4px;
+            transition: color 0.3s;
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+
+            &:hover {
+                color: grey;
+            }
+        }
+
+
+
+
+    }
+
+    .content {
+        .image {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+
+        }
+
+        .recipeInfo {
+            display: flex;
+            margin: 15px 0;
+            gap: 10px;
+
+            .tag {
+                display: inline-block;
+                padding: 5px 10px;
+                font-size: 18px;
+                color: antiquewhite;
+                border-radius: 5px;
+            }
+
+            .level {
+                background-color: rgb(4, 73, 73);
+            }
+
+            .time {
+                background-color: rgb(9, 126, 185);
+            }
+
+            .veg {
+                background-color: rgb(10, 23, 71);
+            }
+
+
+
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            .ingredient {
+                background-color: rgb(17, 34, 27);
+                padding: 5px 10px;
+                border-radius: 5px;
+                font-size: 14px;
+                color: white;
+            }
+
+
+        }
+
+
+
+    }
+
+
+}
