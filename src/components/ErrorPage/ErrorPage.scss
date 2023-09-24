@@ -1,0 +1,21 @@
+.errorPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+
+
+    a {
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: rgb(37, 81, 131);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+
+
+    }
+}

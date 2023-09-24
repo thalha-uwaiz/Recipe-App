@@ -3,16 +3,25 @@ import './RecipeList.scss'
 import { Link } from 'react-router-dom'
 
 function RecipeList({ recipes = [] }) {
+
+    const renderNoRecipes = () => {
+        if (recipes.length === 0)
+            return <div className='noRecipes'>No Recipes Found, Serach for different item</div>
+    }
+
+
+
+
     return (
         <div className='recipeList'>
             <h3 className='title'> Check out these Recipes</h3>
             <div className='list'>
                 {recipes.map(recipe =>
-                    <Link 
-                    to={`/recipe/${recipe.id}`}
-                    className='linkItem'
-                     key={recipe.id}>
-                        <div  className='cardContainer'>
+                    <Link
+                        to={`/recipe/${recipe.id}`}
+                        className='linkItem'
+                        key={recipe.id}>
+                        <div className='cardContainer'>
                             <div className='cardHeading'>
                                 {recipe.title}
                             </div>
@@ -36,6 +45,14 @@ function RecipeList({ recipes = [] }) {
 
 
             </div>
+
+            {renderNoRecipes()}
+
+
+
+
+
+
         </div>
 
     )

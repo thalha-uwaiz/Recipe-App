@@ -4,23 +4,26 @@ import {                                                    // import react rout
 } from "react-router-dom";
 import App from './App';
 import RecipeDetail from "./components/RecipeDetails/RecipeDetail";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([                      //import from react router page
     {
         path: "/",
-        element: <App/>,
-    }, 
+        element: <App />,
+        errorElement: <ErrorPage />
+    },
 
     {
         path: "/recipe/:id",
-        element: <RecipeDetail/>,
-    }, 
-   
+        element: <RecipeDetail />,
+    },
+
+
 ]);
 
 
-const MyRoutes = () => 
+const MyRoutes = () =>
     <RouterProvider router={router} />
 
 

@@ -7,6 +7,7 @@ import RecipeList from "./components/RecipeList/RecipeList";
 function App() {
   const [recipes, setRecipes] = useState([])         // Initializing state for recipes.
   const [loading, setLoading] = useState(true)        // Initializing state for loading indicator.
+  const [searchQuery, SetSearchQuery] = useState()
 
 
   useEffect(() => {                         // Setting up an effect to fetch recipes when the component mounts.
@@ -25,14 +26,21 @@ function App() {
     fetchRecipesData()
   }, [])
 
+  const filterRecipe = searchQuery
+    ? recipes.filter(rec => rec.title.toLowerCase().includes(searchQuery.toLowerCase()))
+    : recipes;
+
+  const recipesToDisplay = filterRecipe;
+
+
 
 
   return (
     <div className="App">
-      <Header title={"Recipe App"}/>
-     
-      {loading ? <Loader name= {"Recipe is loading"}/>
-        :  <RecipeList recipes={recipes}/>}
+      <Header title={"Recipe App"} SetSearchQuery={SetSearchQuery} />
+
+      {loading ? <Loader name={"Recipe is loading"} />
+        : <RecipeList recipes={recipesToDisplay} />}
     </div>
   );
 }
