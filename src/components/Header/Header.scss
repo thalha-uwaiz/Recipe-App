@@ -13,6 +13,23 @@
         font-style: "sand-serif";
     }
 
+    .rightSection {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+
+        .clear {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+    }
+
 }
 
 @media (min-width: 760px) {
