@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Recipe App</title>
+  <script defer="" src="./Recipe App_files/bundle.js"></script><style>.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px;
+  background-color: whitesmoke;
+}
+.header .title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-style: "sand-serif";
+}
+.header .rightSection {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.header .rightSection .clear {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 760px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .title {
+    margin-bottom: 0px;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL0hlYWRlci9IZWFkZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGFBQUE7RUFDQSxzQkFBQTtFQUNBLG1CQUFBO0VBQ0EsYUFBQTtFQUNBLDRCQUFBO0FBQ0o7QUFFSTtFQUNJLGVBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0Esd0JBQUE7QUFBUjtBQUdJO0VBQ0ksYUFBQTtFQUNBLFNBQUE7RUFDQSx1QkFBQTtBQURSO0FBR1E7RUFDSSxrQkFBQTtFQUNBLGVBQUE7RUFDQSxxQkFBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0FBRFo7O0FBU0E7RUFFSTtJQUNJLG1CQUFBO0lBQ0EsOEJBQUE7SUFDQSxtQkFBQTtFQVBOO0VBVUU7SUFDSSxrQkFBQTtFQVJOO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIuaGVhZGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAxNHB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlc21va2U7XG5cblxuICAgIC50aXRsZSB7XG4gICAgICAgIGZvbnQtc2l6ZTogMzBweDtcbiAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgICAgIG1hcmdpbi1ib3R0b206IDZweDtcbiAgICAgICAgZm9udC1zdHlsZTogXCJzYW5kLXNlcmlmXCI7XG4gICAgfVxuXG4gICAgLnJpZ2h0U2VjdGlvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGdhcDogMjBweDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XG5cbiAgICAgICAgLmNsZWFyIHtcbiAgICAgICAgICAgIHBhZGRpbmc6IDEwcHggMTVweDtcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6IHJlZDtcbiAgICAgICAgICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAgICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgICAgIFxuXG4gICAgICAgIH1cbiAgICB9XG5cbn1cblxuQG1lZGlhIChtaW4td2lkdGg6IDc2MHB4KSB7XG5cbiAgICAuaGVhZGVyIHtcbiAgICAgICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIH1cblxuICAgIC50aXRsZSB7XG4gICAgICAgIG1hcmdpbi1ib3R0b206IDBweDtcbiAgICB9XG5cbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.searchBar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.searchBar form {
+  display: flex;
+  align-items: center;
+}
+.searchBar input[type=text] {
+  padding: 10px;
+  font-size: 16px;
+  border: solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.searchBar button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: rgb(37, 81, 131);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL1NlYXJjaGJhci9TZWFyY2hiYXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGFBQUE7RUFDQSxtQkFBQTtFQUNBLG1CQUFBO0FBQ0o7QUFDSTtFQUNJLGFBQUE7RUFDQSxtQkFBQTtBQUNSO0FBRUk7RUFDSSxhQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtBQUFSO0FBR0k7RUFDSSxrQkFBQTtFQUNBLGVBQUE7RUFDQSxrQ0FBQTtFQUNBLFlBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0FBRFIiLCJzb3VyY2VzQ29udGVudCI6WyIuc2VhcmNoQmFyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luLWJvdHRvbTogMTBweDtcblxuICAgIGZvcm0ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIH1cblxuICAgIGlucHV0W3R5cGU9XCJ0ZXh0XCJdIHtcbiAgICAgICAgcGFkZGluZzogMTBweDtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBib3JkZXI6IHNvbGlkICNjY2M7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xuICAgIH1cblxuICAgIGJ1dHRvbiB7XG4gICAgICAgIHBhZGRpbmc6IDEwcHggMTVweDtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMzcsIDgxLCAxMzEpO1xuICAgICAgICBjb2xvcjogd2hpdGU7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgfVxuXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  flex-direction: column;
+}
+
+.title {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(74, 17, 17);
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL0xvYWRlci9Mb2FkZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGtCQUFBO0VBQ0EsTUFBQTtFQUNBLE9BQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSx1QkFBQTtFQUNBLG1CQUFBO0VBQ0EsWUFBQTtFQUNBLHNCQUFBO0FBQ0o7O0FBSUE7RUFDSSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0EsZUFBQTtFQUNBLHNCQUFBO0FBREoiLCJzb3VyY2VzQ29udGVudCI6WyIubG9hZGVyIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAwO1xuICAgIGxlZnQ6IDA7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICB6LWluZGV4OiA5OTk7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcblxuXG59XG5cbi50aXRsZSB7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICBmb250LXNpemU6IDMwcHg7XG4gICAgY29sb3I6IHJnYig3NCwgMTcsIDE3KTtcbn1cblxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.recipeList .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+.recipeList .header .title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #1f0d0d;
+}
+.recipeList .header select {
+  outline: none;
+  border: 10x solid #ccc;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: large;
+}
+.recipeList .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding-top: 20px;
+}
+.recipeList .list .linkItem {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+}
+.recipeList .cardContainer {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px black;
+  background-color: antiquewhite;
+  height: 100%;
+  transition: transform 0.3s ease;
+  min-width: 300px;
+}
+.recipeList .cardContainer .cardHeading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.recipeList .cardContainer .recipeInfo {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.recipeList .cardContainer .recipeInfo .tag {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 18px;
+  color: antiquewhite;
+  border-radius: 5px;
+}
+.recipeList .cardContainer .recipeInfo .level {
+  background-color: rgb(4, 73, 73);
+}
+.recipeList .cardContainer .recipeInfo .time {
+  background-color: rgb(9, 126, 185);
+}
+.recipeList .cardContainer .recipeInfo .veg {
+  background-color: rgb(10, 23, 71);
+}
+.recipeList .cardContainer:hover {
+  transform: translate(-5px);
+}
+.recipeList .cardContainer .image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.recipeList .noRecipes {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL1JlY2lwZUxpc3QvUmVjaXBlTGlzdC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVJO0VBQ0ksYUFBQTtFQUNBLDhCQUFBO0VBQ0EsbUJBQUE7RUFDQSxhQUFBO0FBRFI7QUFHUTtFQUNJLGVBQUE7RUFDQSxpQkFBQTtFQUNBLG1CQUFBO0VBQ0EsZ0JBQUE7RUFDQSxjQUFBO0FBRFo7QUFJUTtFQUNJLGFBQUE7RUFDQSxzQkFBQTtFQUNBLGlCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxtQkFBQTtFQUNBLGdCQUFBO0FBRlo7QUFPSTtFQUNJLGFBQUE7RUFDQSxlQUFBO0VBQ0EsdUJBQUE7RUFDQSxTQUFBO0VBQ0EsaUJBQUE7QUFMUjtBQU9RO0VBQ0kscUJBQUE7RUFDQSxjQUFBO0VBQ0EsYUFBQTtBQUxaO0FBU0k7RUFDSSxhQUFBO0VBQ0EsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsOEJBQUE7RUFDQSxrQkFBQTtFQUNBLDJCQUFBO0VBQ0EsOEJBQUE7RUFDQSxZQUFBO0VBQ0EsK0JBQUE7RUFDQSxnQkFBQTtBQVBSO0FBU1E7RUFDSSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSxtQkFBQTtBQVBaO0FBVVE7RUFDSSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSxTQUFBO0FBUlo7QUFVWTtFQUNJLHFCQUFBO0VBQ0EsaUJBQUE7RUFDQSxlQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtBQVJoQjtBQVdZO0VBQ0ksZ0NBQUE7QUFUaEI7QUFZWTtFQUNJLGtDQUFBO0FBVmhCO0FBYVk7RUFDSSxpQ0FBQTtBQVhoQjtBQWdCUTtFQUNJLDBCQUFBO0FBZFo7QUFpQlE7RUFDSSxXQUFBO0VBQ0EsYUFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7QUFmWjtBQW9CSTtFQUNJLGVBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0FBbEJSIiwic291cmNlc0NvbnRlbnQiOlsiLnJlY2lwZUxpc3Qge1xuXG4gICAgLmhlYWRlciB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAgcGFkZGluZzogMjVweDtcblxuICAgICAgICAudGl0bGUge1xuICAgICAgICAgICAgZm9udC1zaXplOiAzMHB4O1xuICAgICAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgICAgICAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xuICAgICAgICAgICAgdGV4dC1hbGlnbjogbGVmdDtcbiAgICAgICAgICAgIGNvbG9yOiAjMWYwZDBkO1xuICAgICAgICB9XG5cbiAgICAgICAgc2VsZWN0IHtcbiAgICAgICAgICAgIG91dGxpbmU6IG5vbmU7XG4gICAgICAgICAgICBib3JkZXI6IDEweCBzb2xpZCAjY2NjO1xuICAgICAgICAgICAgcGFkZGluZzogNXB4IDEwcHg7XG4gICAgICAgICAgICBtYXJnaW4tdG9wOiAxMHB4O1xuICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogbGFyZ2U7XG4gICAgICAgIH1cbiAgICB9XG5cblxuICAgIC5saXN0IHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgZmxleC13cmFwOiB3cmFwO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgZ2FwOiAxMnB4O1xuICAgICAgICBwYWRkaW5nLXRvcDogMjBweDtcblxuICAgICAgICAubGlua0l0ZW0ge1xuICAgICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgICAgY29sb3I6IGluaGVyaXQ7XG4gICAgICAgICAgICBwYWRkaW5nOiAxMHB4O1xuICAgICAgICB9XG4gICAgfVxuXG4gICAgLmNhcmRDb250YWluZXIge1xuICAgICAgICBwYWRkaW5nOiAxMHB4O1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDhweDtcbiAgICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IGJsYWNrO1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiBhbnRpcXVld2hpdGU7XG4gICAgICAgIGhlaWdodDogMTAwJTtcbiAgICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuM3MgZWFzZTtcbiAgICAgICAgbWluLXdpZHRoOiAzMDBweDtcblxuICAgICAgICAuY2FyZEhlYWRpbmcge1xuICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4O1xuICAgICAgICAgICAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gICAgICAgICAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xuICAgICAgICB9XG5cbiAgICAgICAgLnJlY2lwZUluZm8ge1xuICAgICAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG4gICAgICAgICAgICBnYXA6IDEwcHg7XG5cbiAgICAgICAgICAgIC50YWcge1xuICAgICAgICAgICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICAgICAgICAgICAgICBwYWRkaW5nOiA1cHggMTBweDtcbiAgICAgICAgICAgICAgICBmb250LXNpemU6IDE4cHg7XG4gICAgICAgICAgICAgICAgY29sb3I6IGFudGlxdWV3aGl0ZTtcbiAgICAgICAgICAgICAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIC5sZXZlbCB7XG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDQsIDczLCA3Myk7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIC50aW1lIHtcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoOSwgMTI2LCAxODUpO1xuICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICAudmVnIHtcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTAsIDIzLCA3MSk7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgfVxuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTVweCk7XG4gICAgICAgIH1cblxuICAgICAgICAuaW1hZ2Uge1xuICAgICAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgICAgICBoZWlnaHQ6IDIwMHB4O1xuICAgICAgICAgICAgb2JqZWN0LWZpdDogY292ZXI7XG4gICAgICAgICAgICBib3JkZXItcmFkaXVzOiA4cHg7XG5cbiAgICAgICAgfVxuICAgIH1cblxuICAgIC5ub1JlY2lwZXMge1xuICAgICAgICBmb250LXNpemU6IDIwcHg7XG4gICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgfVxuXG5cbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.details {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.details a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(39, 100, 124);
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+.details .header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.details .header .favBtn {
+  cursor: pointer;
+  font-size: 15px;
+  background-color: rgb(39, 100, 124);
+  border-radius: 4px;
+  transition: color 0.3s;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+.details .header .favBtn:hover {
+  color: grey;
+}
+.details .content .image {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.details .content .recipeInfo {
+  display: flex;
+  margin: 15px 0;
+  gap: 10px;
+}
+.details .content .recipeInfo .tag {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 18px;
+  color: antiquewhite;
+  border-radius: 5px;
+}
+.details .content .recipeInfo .level {
+  background-color: rgb(4, 73, 73);
+}
+.details .content .recipeInfo .time {
+  background-color: rgb(9, 126, 185);
+}
+.details .content .recipeInfo .veg {
+  background-color: rgb(10, 23, 71);
+}
+.details .content .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.details .content .tags .ingredient {
+  background-color: rgb(17, 34, 27);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL1JlY2lwZURldGFpbHMvUmVjaXBlRGV0YWlsLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxnQkFBQTtFQUNBLGNBQUE7RUFDQSxhQUFBO0FBQ0o7QUFHSTtFQUNJLHFCQUFBO0VBQ0EsWUFBQTtFQUNBLG1DQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQ0EsZUFBQTtBQURSO0FBS0k7RUFDSSxnQkFBQTtFQUNBLGFBQUE7RUFDQSw4QkFBQTtBQUhSO0FBS1E7RUFDSSxlQUFBO0VBQ0EsZUFBQTtFQUNBLG1DQUFBO0VBQ0Esa0JBQUE7RUFDQSxzQkFBQTtFQUNBLFlBQUE7RUFDQSxxQkFBQTtFQUNBLFlBQUE7QUFIWjtBQUtZO0VBQ0ksV0FBQTtBQUhoQjtBQWFRO0VBQ0ksV0FBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7QUFYWjtBQWVRO0VBQ0ksYUFBQTtFQUNBLGNBQUE7RUFDQSxTQUFBO0FBYlo7QUFlWTtFQUNJLHFCQUFBO0VBQ0EsaUJBQUE7RUFDQSxlQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtBQWJoQjtBQWdCWTtFQUNJLGdDQUFBO0FBZGhCO0FBaUJZO0VBQ0ksa0NBQUE7QUFmaEI7QUFrQlk7RUFDSSxpQ0FBQTtBQWhCaEI7QUF1QlE7RUFDSSxhQUFBO0VBQ0EsZUFBQTtFQUNBLFNBQUE7QUFyQlo7QUF1Qlk7RUFDSSxpQ0FBQTtFQUNBLGlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0VBQ0EsWUFBQTtBQXJCaEIiLCJzb3VyY2VzQ29udGVudCI6WyIuZGV0YWlscyB7XG4gICAgbWF4LXdpZHRoOiA4MDBweDtcbiAgICBtYXJnaW46IDAgYXV0bztcbiAgICBwYWRkaW5nOiAyMHB4O1xuXG5cblxuICAgIGEge1xuICAgICAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDM5LCAxMDAsIDEyNCk7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG5cbiAgICB9XG5cbiAgICAuaGVhZGVyIHtcbiAgICAgICAgbWFyZ2luLXRvcDogMTBweDtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuXG4gICAgICAgIC5mYXZCdG4ge1xuICAgICAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICAgICAgZm9udC1zaXplOiAxNXB4O1xuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDM5LCAxMDAsIDEyNCk7XG4gICAgICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgICAgICB0cmFuc2l0aW9uOiBjb2xvciAwLjNzO1xuICAgICAgICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgICAgICAgICAgcGFkZGluZzogNXB4O1xuXG4gICAgICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICAgICAgICBjb2xvcjogZ3JleTtcbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuXG5cblxuXG4gICAgfVxuXG4gICAgLmNvbnRlbnQge1xuICAgICAgICAuaW1hZ2Uge1xuICAgICAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICAgICAgICBtYXgtaGVpZ2h0OiA0MDBweDtcbiAgICAgICAgICAgIG9iamVjdC1maXQ6IGNvdmVyO1xuICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogOHB4O1xuXG4gICAgICAgIH1cblxuICAgICAgICAucmVjaXBlSW5mbyB7XG4gICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICAgICAgbWFyZ2luOiAxNXB4IDA7XG4gICAgICAgICAgICBnYXA6IDEwcHg7XG5cbiAgICAgICAgICAgIC50YWcge1xuICAgICAgICAgICAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICAgICAgICAgICAgICBwYWRkaW5nOiA1cHggMTBweDtcbiAgICAgICAgICAgICAgICBmb250LXNpemU6IDE4cHg7XG4gICAgICAgICAgICAgICAgY29sb3I6IGFudGlxdWV3aGl0ZTtcbiAgICAgICAgICAgICAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIC5sZXZlbCB7XG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDQsIDczLCA3Myk7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIC50aW1lIHtcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoOSwgMTI2LCAxODUpO1xuICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICAudmVnIHtcbiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTAsIDIzLCA3MSk7XG4gICAgICAgICAgICB9XG5cblxuXG4gICAgICAgIH1cblxuICAgICAgICAudGFncyB7XG4gICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICAgICAgZmxleC13cmFwOiB3cmFwO1xuICAgICAgICAgICAgZ2FwOiAxMHB4O1xuXG4gICAgICAgICAgICAuaW5ncmVkaWVudCB7XG4gICAgICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDE3LCAzNCwgMjcpO1xuICAgICAgICAgICAgICAgIHBhZGRpbmc6IDVweCAxMHB4O1xuICAgICAgICAgICAgICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICAgICAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgICAgICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgICAgICAgfVxuXG5cbiAgICAgICAgfVxuXG5cblxuICAgIH1cblxuXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.errorPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.errorPage a {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: rgb(37, 81, 131);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL0Vycm9yUGFnZS9FcnJvclBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGFBQUE7RUFDQSxtQkFBQTtFQUNBLHVCQUFBO0VBQ0EsYUFBQTtFQUNBLHNCQUFBO0FBQ0o7QUFFSTtFQUNJLGtCQUFBO0VBQ0EsZUFBQTtFQUNBLGtDQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLGVBQUE7RUFDQSxxQkFBQTtBQUFSIiwic291cmNlc0NvbnRlbnQiOlsiLmVycm9yUGFnZSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGhlaWdodDogMTAwdmg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcblxuXG4gICAgYSB7XG4gICAgICAgIHBhZGRpbmc6IDEwcHggMTVweDtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMzcsIDgxLCAxMzEpO1xuICAgICAgICBjb2xvcjogd2hpdGU7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcblxuXG4gICAgfVxufSJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><div class="header"><div class="title">Recipe App</div><div class="rightSection"><div class="searchBar"><form><input type="text" placeholder="Search Recipes" value=""><button type="submit">Search</button></form></div><button class="clear">Clear</button></div></div><div class="recipeList"><div class="header"><h3 class="title"> Check out these Recipes</h3><select name="filter" id="filter"><option value="">All</option><option value="veg">Veg</option><option value="non-veg">Non Veg</option><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option></select></div><div class="list"><a class="linkItem" href="http://localhost:3000/recipe/1"><div class="cardContainer"><div class="cardHeading">Chicken Biryani</div><div class="recipeInfo"><span class="tag level">medium</span><span class="tag time">45 - 60 min</span><span class="tag veg">Non-Veg</span></div><img class="image" src="./Recipe App_files/chicken-hyderabadi-biryani-01.jpg" alt="Chicken Biryani"></div></a><a class="linkItem" href="http://localhost:3000/recipe/2"><div class="cardContainer"><div class="cardHeading">Masala Dosa</div><div class="recipeInfo"><span class="tag level">easy</span><span class="tag time">15 min</span><span class="tag veg">veg</span></div><img class="image" src="./Recipe App_files/thumb__1200_0_0_0_auto.jpg" alt="Masala Dosa"></div></a><a class="linkItem" href="http://localhost:3000/recipe/3"><div class="cardContainer"><div class="cardHeading">Idli</div><div class="recipeInfo"><span class="tag level">easy</span><span class="tag time">15 min</span><span class="tag veg">veg</span></div><img class="image" src="./Recipe App_files/Classic_Homemade_Soft_Idli_Recipe_Video_3.jpg" alt="Idli"></div></a><a class="linkItem" href="http://localhost:3000/recipe/4"><div class="cardContainer"><div class="cardHeading">Chettinad Chicken</div><div class="recipeInfo"><span class="tag level">medium</span><span class="tag time">30 min</span><span class="tag veg">Non-Veg</span></div><img class="image" src="./Recipe App_files/IMG_9350.jpg" alt="Chettinad Chicken"></div></a><a class="linkItem" href="http://localhost:3000/recipe/5"><div class="cardContainer"><div class="cardHeading">Kothu Parotta</div><div class="recipeInfo"><span class="tag level">medium</span><span class="tag time">60 min</span><span class="tag veg">veg</span></div><img class="image" src="./Recipe App_files/KUTTU-PORATTA-750x750.jpg" alt="Kothu Parotta"></div></a><a class="linkItem" href="http://localhost:3000/recipe/6"><div class="cardContainer"><div class="cardHeading">Bisi Bele Bath</div><div class="recipeInfo"><span class="tag level">medium</span><span class="tag time">30 min</span><span class="tag veg">veg</span></div><img class="image" src="./Recipe App_files/IMG-6010-2-757x1024.jpg" alt="Bisi Bele Bath"></div></a><a class="linkItem" href="http://localhost:3000/recipe/7"><div class="cardContainer"><div class="cardHeading">Puliyodarai (Tamarind Rice)</div><div class="recipeInfo"><span class="tag level">easy</span><span class="tag time">25</span><span class="tag veg">veg</span></div><img class="image" src="./Recipe App_files/puliyodarai.jpg" alt="Puliyodarai (Tamarind Rice)"></div></a><a class="linkItem" href="http://localhost:3000/recipe/8"><div class="cardContainer"><div class="cardHeading">Coconut Chutney</div><div class="recipeInfo"><span class="tag level">easy</span><span class="tag time">10 min</span><span class="tag veg">veg</span></div><img class="image" src="./Recipe App_files/Best-Coconut-Chutney-Recipe.jpg" alt="Coconut Chutney"></div></a><a class="linkItem" href="http://localhost:3000/recipe/9"><div class="cardContainer"><div class="cardHeading">Medu Vada</div><div class="recipeInfo"><span class="tag level">easy</span><span class="tag time">15 min</span><span class="tag veg">veg</span></div><img class="image" src="./Recipe App_files/vrat-ka-medu-vada-2-2.jpg" alt="Medu Vada"></div></a><a class="linkItem" href="http://localhost:3000/recipe/10"><div class="cardContainer"><div class="cardHeading">Paniyaram</div><div class="recipeInfo"><span class="tag level">medium</span><span class="tag time">45 min</span><span class="tag veg">veg</span></div><img class="image" src="./Recipe App_files/Oats-Paniyaram-recipe-How-to-make-Oats-Rava-Kuzhi-Paniyaram-and-Kara-Chutney-scaled.jpg" alt="Paniyaram"></div></a><a class="linkItem" href="http://localhost:3000/recipe/11"><div class="cardContainer"><div class="cardHeading">Paneer Butter Masala</div><div class="recipeInfo"><span class="tag level">medium</span><span class="tag time">40 min</span><span class="tag veg">veg</span></div><img class="image" src="./Recipe App_files/paneer-butter-masala-recipe.jpg" alt="Paneer Butter Masala"></div></a><a class="linkItem" href="http://localhost:3000/recipe/12"><div class="cardContainer"><div class="cardHeading">Mutton Rogan Josh</div><div class="recipeInfo"><span class="tag level">hard</span><span class="tag time">2 hours</span><span class="tag veg">Non-Veg</span></div><img class="image" src="./Recipe App_files/paneer-butter-masala-recipe.jpg" alt="Mutton Rogan Josh"></div></a><a class="linkItem" href="http://localhost:3000/recipe/13"><div class="cardContainer"><div class="cardHeading">Vegetable Pulao</div><div class="recipeInfo"><span class="tag level">easy</span><span class="tag time">25 min</span><span class="tag veg">veg</span></div><img class="image" src="./Recipe App_files/images" alt="Vegetable Pulao"></div></a><a class="linkItem" href="http://localhost:3000/recipe/14"><div class="cardContainer"><div class="cardHeading">Chole Bhature</div><div class="recipeInfo"><span class="tag level">medium</span><span class="tag time">2 hours</span><span class="tag veg">veg</span></div><img class="image" src="./Recipe App_files/chole-bhature-recipe.jpg" alt="Chole Bhature"></div></a><a class="linkItem" href="http://localhost:3000/recipe/15"><div class="cardContainer"><div class="cardHeading">Spinach and Feta Stuffed Chicken</div><div class="recipeInfo"><span class="tag level">hard</span><span class="tag time">1 hour</span><span class="tag veg">Non-Veg</span></div><img class="image" src="./Recipe App_files/1501p130-spinach-feta-stuffed-chicken-breasts-8030825-66b09a00be4340c6a6af32fda656319c.jpg" alt="Spinach and Feta Stuffed Chicken"></div></a><a class="linkItem" href="http://localhost:3000/recipe/16"><div class="cardContainer"><div class="cardHeading">Shrimp Scampi Pasta</div><div class="recipeInfo"><span class="tag level">medium</span><span class="tag time">30 min</span><span class="tag veg">Non-Veg</span></div><img class="image" src="./Recipe App_files/Shrimp-Scampi-f.jpg" alt="Shrimp Scampi Pasta"></div></a><a class="linkItem" href="http://localhost:3000/recipe/17"><div class="cardContainer"><div class="cardHeading">Mango Avocado Salad</div><div class="recipeInfo"><span class="tag level">easy</span><span class="tag time">15 min</span><span class="tag veg">veg</span></div><img class="image" src="./Recipe App_files/mango-avocado-salad-1.jpg" alt="Mango Avocado Salad"></div></a><a class="linkItem" href="http://localhost:3000/recipe/18"><div class="cardContainer"><div class="cardHeading">Thai Red Curry with Tofu</div><div class="recipeInfo"><span class="tag level">medium</span><span class="tag time">35 min</span><span class="tag veg">veg</span></div><img class="image" src="./Recipe App_files/mc-coconut-red-curry-with-tofu-articleLarge.jpg" alt="Thai Red Curry with Tofu"></div></a><a class="linkItem" href="http://localhost:3000/recipe/19"><div class="cardContainer"><div class="cardHeading">Classic Tiramisu</div><div class="recipeInfo"><span class="tag level">medium</span><span class="tag time">4 hours</span><span class="tag veg">veg</span></div><img class="image" src="./Recipe App_files/classic_tiramisu_recipe.jpg" alt="Classic Tiramisu"></div></a><a class="linkItem" href="http://localhost:3000/recipe/20"><div class="cardContainer"><div class="cardHeading">Vegetable Biryani</div><div class="recipeInfo"><span class="tag level">medium</span><span class="tag time">1 hour</span><span class="tag veg">veg</span></div><img class="image" src="./Recipe App_files/Vegetable-Biryani-Instant-Pot-Piping-Pot-Curry-4.jpg" alt="Vegetable Biryani"></div></a><a class="linkItem" href="http://localhost:3000/recipe/21"><div class="cardContainer"><div class="cardHeading">Mushroom Risotto</div><div class="recipeInfo"><span class="tag level">medium</span><span class="tag time">40 min</span><span class="tag veg">veg</span></div><img class="image" src="./Recipe App_files/mushroom-risotto.jpg" alt="Mushroom Risotto"></div></a><a class="linkItem" href="http://localhost:3000/recipe/22"><div class="cardContainer"><div class="cardHeading">Grilled Tandoori Chicken</div><div class="recipeInfo"><span class="tag level">medium</span><span class="tag time">1 hour</span><span class="tag veg">Non-Veg</span></div><img class="image" src="./Recipe App_files/Grilled-Tandori-Chicken-FT-RECIPE0323-de1e247b1dbb4c0e9cb11243141eaa50.jpg" alt="Grilled Tandoori Chicken"></div></a></div></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>
